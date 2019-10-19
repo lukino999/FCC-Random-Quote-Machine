@@ -10,6 +10,8 @@ function ready() {
 
 function getQuote() {
 	console.log('Getting quote...');
+
+	$('#main-container').addClass('animated fadeOut');
 	
 	const url='https://api.quotable.io/random';
 	jQuery.get(url,null,function(data, textStatus, jqXHR) {
@@ -24,7 +26,12 @@ function getQuote() {
 
 		// update tweet anchor
 		$('#tweet-quote').attr("href", `https://twitter.com/intent/tweet?text=${data.content} - ${data.author}`);
+
+		$('#main-container').removeClass('animated fadeOut');
+		$('#main-container').addClass('animated fadeIn');
 	});
+
+	
 }
 
 function newButtonClick() {

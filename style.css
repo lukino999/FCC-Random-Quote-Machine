@@ -4,8 +4,14 @@ body {
 
 #new-quote {
   cursor: pointer;
+  color: #888;
+}
+
+#new-quote:hover {
+  color: #666;
 }
 
 #quote-box {
   margin-top: 10%;
 }
+
