@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+}
+
+#new-quote {
+  cursor: pointer;
+}
+
+#quote-box {
+  margin-top: 10%;
+}
